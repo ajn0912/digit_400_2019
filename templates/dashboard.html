@@ -8,13 +8,16 @@
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">Articles</a>
   </li>
     <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="profile" aria-selected="false">Messages</a>
+    <a class="nav-link" id="about-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="about" aria-selected="false">Media</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Forums</a>
   </li>
 </ul><!-- END Nav Tabs -->
 
@@ -25,7 +28,7 @@
       {% for i in APP_CONTENT["Home"] %}
       
       <div class="card" style="width: 18rem;">
-          <img src="https://pbs.twimg.com/media/Bb6cezeIIAIZ2d_.jpg" class="card-img-top" alt="...">
+          <img src="{{ url_for('static',filename='images/mainlogo.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{i[0]}}</h5>
             <p class="card-text">{{i[2]}}</p>
@@ -36,12 +39,12 @@
       {% endfor %}
       
     </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
     <div class="card-deck">
-      {% for i in APP_CONTENT["Profile"] %}
+      {% for i in APP_CONTENT["About"] %}
       
       <div class="card" style="width: 18rem;">
-          <img src="https://pbs.twimg.com/media/Bb6cezeIIAIZ2d_.jpg" class="card-img-top" alt="...">
+          <img src="{{ url_for('static',filename='images/mainlogo.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{i[0]}}</h5>
             <p class="card-text">{{i[2]}}</p>
@@ -57,7 +60,7 @@
       {% for i in APP_CONTENT["Messages"] %}
       
       <div class="card" style="width: 18rem;">
-          <img src="https://pbs.twimg.com/media/Bb6cezeIIAIZ2d_.jpg" class="card-img-top" alt="...">
+          <img src="{{ url_for('static',filename='images/mainlogo.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{i[0]}}</h5>
             <p class="card-text">{{i[2]}}</p>
@@ -73,7 +76,7 @@
       {% for i in APP_CONTENT["Contact"] %}
       
       <div class="card" style="width: 18rem;">
-          <img src="https://pbs.twimg.com/media/Bb6cezeIIAIZ2d_.jpg" class="card-img-top" alt="...">
+          <img src="{{ url_for('static',filename='images/mainlogo.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{i[0]}}</h5>
             <p class="card-text">{{i[2]}}</p>
