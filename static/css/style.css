@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 h1 {
-    color: red;/* this is a css comment! */
-    font-family: fantasy;
+    color: #009900;/* this is a css comment! */
+    /* font-family: fantasy; */
+    font-family: 'Indie Flower', cursive;
+}
+
+#wordmark {
+    /* DIGIT 400 LOGO WORDMARK */
+    font-family: 'Indie Flower', cursive;
 }
 
 .loop { /*class selector!*/

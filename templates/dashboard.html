@@ -21,6 +21,44 @@
   </li>
 </ul><!-- END Nav Tabs -->
 
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Login here!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <br/>
+              <h4>Login</h4>
+        <br>
+        <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="User Name" name="username" value="{{request.form.username}}">
+            &nbsp;
+            <input type="password" class="form-control" placeholder="Password" name="password" value="{{request.form.password}}">
+            <br>
+            <input type="submit" class="btn btn-default" value="Login">
+        </form>
+        <br>
+        <code>{{error}}</code>
+        <hr>
+        <h5>Register a new account!</h5>
+        <p>Click here to be redirected to our <a href="/register/">registration page</a>!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Model -->
+
 <!-- Tab Content -->
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">

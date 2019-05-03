@@ -172,6 +172,34 @@ def downloads():
         attachment_filename+"doggie.jpeg")
     except Exception as e:
         return str(e)
+
+@app.route("/kennels/")
+def kennels():
+    try:
+        return render_template("kennels.html", APP_CONTENT = APP_CONTENT)
+    except Exception as e:
+        return render_template("500.html", error = e)
+    
+@app.route("/animal_hospitals/")
+def animal_hospitals():
+    try:
+        return render_template("animal_hospitals.html", APP_CONTENT = APP_CONTENT)
+    except Exception as e:
+        return render_template("500.html", error = e)
+
+@app.route("/pet_training/")
+def pet_training():
+    try:
+        return render_template("pet_training.html", APP_CONTENT = APP_CONTENT)
+    except Exception as e:
+        return render_template("500.html", error = e)
+    
+@app.route("/pet_grooming/")
+def pet_grooming():
+    try:
+        return render_template("pet_grooming.html", APP_CONTENT = APP_CONTENT)
+    except Exception as e:
+        return render_template("500.html", error = e)
     
 
 ## Site Map

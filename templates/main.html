@@ -44,36 +44,68 @@
           <a class="navbar-brand" href="/">
     <img src="{{ url_for('static',filename='images/mainlogo.png')}}" width="50" alt="main logo for digit 400 site">
   </a>
-  <a class="navbar-brand" href="/">Animal Network</a>
+  <a id="wordmark" class="navbar-brand" href="/">Animal Network</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="https://digitarts.site/">Home</a>
       </li>
           
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link" href="/dashboard/">Dashboard</a>
-      </li>
+      </li> -->
         
      <li class="nav-item">
         <a class="nav-link" href="/welcome/">About</a>
       </li>
-         
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+        
+    <li class="nav-item">
+        <a class="nav-link" href="/kennels/">Kennels</a>
       </li>
+        
+    <li class="nav-item">
+        <a class="nav-link" href="/animal_hospitals/">Animal Hospitals</a>
+      </li>
+        
+    <li class="nav-item">
+        <a class="nav-link" href="/pet_training/">Pet Training</a>
+      </li>
+        
+    <li class="nav-item">
+        <a class="nav-link" href="/pet_grooming/">Pet Grooming</a>
+      </li>
+         
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+      </li> -->
     </ul>
   </div>
 </nav><!-- END Nav Bar -->
       
-    
-    <video autoplay muted loop style="width: 100%">
-        <source src="/static/videos/main_logo2.mp4" type="video/mp4">
+<video autoplay muted loop style="width: 100%">
+        <source src="/static/videos/main_logo.mp4" type="video/mp4">
     </video>  
-     
+      
+<div class="container">
+  <!-- Content here -->
+    <h1 class="text-center">Welcome!</h1>
+    
+    <p>Welcome to Animal Network! This site is a one-stop shop for all your animal caretaking needs in Erie, Pennsylvania.  Want to learn more about us or get in touch?  Check out our <a href="/welcome/">About</a> page!  Need a place for your pet to stay?  Take a look at our <a href="/kennels/">Kennels</a> page!  Is your pet in need of medical attention? Pay a visit to our <a href="/animal_hospitals/">Animal Hospitals</a> page!  Need to get your pet trained or groomed?  No need to worry, we have what you're looking for on our <a href="/pet_training/">Pet Training</a> and <a href="/pet_grooming/">Pet Grooming</a> pages!  Below, you'll find a social media feed featuring all of the orgainizations featured on the site so that you'll be up to date on all the latest news!</p>  
+</div>
+      
+<br>
+
+      
+<h1 class="text-center">Social Media Feed</h1>
+      
+<div class='embedsocial-hashtag' data-ref="e0210df70b9aafa9a42a06ca1ff03b6de83c5e9e" ></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+      
+      
+      
+<!--<img src="{{url_for('static', filename='images/Animal Network3.png') }}" width="1900px"> -->
       
       
       <!-- Modal -->
@@ -121,4 +153,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
+    
+  
+    <footer>
+  <p>© Animal Network</p>
+</footer>
+
+
 </html>

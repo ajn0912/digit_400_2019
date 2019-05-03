@@ -4,13 +4,66 @@
 
 <!--<p>{{output}}</p>-->
 
+
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Login here!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <br/>
+              <h4>Login</h4>
+        <br>
+        <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="User Name" name="username" value="{{request.form.username}}">
+            &nbsp;
+            <input type="password" class="form-control" placeholder="Password" name="password" value="{{request.form.password}}">
+            <br>
+            <input type="submit" class="btn btn-default" value="Login">
+        </form>
+        <br>
+        <code>{{error}}</code>
+        <hr>
+        <h5>Register a new account!</h5>
+        <p>Click here to be redirected to our <a href="/register/">registration page</a>!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Model -->
+
 <div class="container">
 
     <h1>About</h1>
-    <p>The name of my website is Animal Network.  My vision for the site is a place where people could interact and discuss all things concerning or relating to animals.  The Home page features a news feed for the site as well as a “Pic of the Day” and links to social media.  The articles page provides a variety of different material to read.  These articles are about anything animal related. Users can share any articles of their own that they come across as well as write their own as long as they are a registered user on the site.  The media page includes a library of pictures and videos that registered users of the site can help contribute to creating. The contact page includes an email, phone number for the Animal Network.  The forums page is a place for everyone to login and discuss different questions relating to animals.</p>
     
+    <p>Welcome to Animal Network!  The site was created by Alex Newcamp, a local resident of Erie, Pennsylvania.  Alex is an animal owner and always wished there was a place that where he could easily locate local resources to help care for his pet.  So that is what he set out to create.  The goal of the site is to inform people on where they can find valuable resources to help them care for their pet.  We provide pet owners with information as well as a way to contact services that would be useful to them.  Here you will find pages on local Kennels, Animal Hospitals, Pet Training, and Pet Grooming!  On those pages you will find links to different websites as well as phone numbers, emails, and addresses for the companies listed.</p>
+    
+    <p>Email us with any quesions or comments at <a href="mailto:animalnetwork2019@gmail.com">animalnetwork2019@gmail.com</a>!</p>
+    
+    <p>GitHub page located <a href="https://github.com/ajn0912">here</a>!</p>
     
 </div>
+
+<div class="container">
+  <!-- Content here -->
+    <footer>
+  <p>© Animal Network</p>
+</footer>
+</div>
+
+
 
 
 {% endblock %}
